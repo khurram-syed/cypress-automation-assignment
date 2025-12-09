@@ -1,0 +1,58 @@
+# =====================================
+# Node / NPM
+# =====================================
+node_modules/
+
+# =====================================
+# Cypress Artifacts
+# =====================================
+cypress/screenshots/
+
+# No need to commit test recordings or screenshots
+cypress/reports/
+cypress/reports/**
+
+# =====================================
+# Allure Report Files
+# =====================================
+allure-results/
+allure-report/
+allure-history/
+
+# If using Allure testops or GitHub Actions history plugin
+allure-results/history/
+history/
+
+# =====================================
+# Environment / Local Config
+# =====================================
+.env
+.env.local
+.env.*.local
+
+# =====================================
+# System Files
+# =====================================
+.DS_Store
+Thumbs.db
+
+# =====================================
+# IDE Files
+# =====================================
+.vscode/
+.idea/
+*.iml
+
+# =====================================
+# Logs
+# =====================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# =====================================
+# Mac-specific Files
+# =====================================
+**/.DS_Store

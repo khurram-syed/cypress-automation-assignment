@@ -1,0 +1,34 @@
+{
+  "name": "cypress-auotmation-assignment",
+  "version": "1.0.0",
+  "description": "Cypress project to be used for the automation QA technical challenge",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "Cypress open",
+    "cy:run": "Cypress run",
+    "cy:run:smoke": "npm run clean:all && cypress run --env TAGS='@smoke'",
+    "test:headed:chrome": "npm run clean:all && cypress run --headed --browser chrome",
+    "test:headed:firefox": "npm run clean:all && cypress run --headed --browser firefox",
+    "clean:all": "rm -rf allure-results allure-report || true",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:report": "npm run allure:generate && npm run allure:open",
+    "test:allure": "npm run clean:all && npx cypress run && npm run allure:report"
+  },
+  "homepage": "https://demoqa.com/",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.35.1",
+    "cypress": "^13.3.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": [
+      "cypress/e2e/stepDefinitions/**/*.{js,ts}"
+    ]
+  }
+}
