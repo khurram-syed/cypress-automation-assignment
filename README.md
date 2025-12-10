@@ -20,3 +20,73 @@ This project is intended to test the practice form page of the [demoqa](https://
 4. Point out what is good and what is wrong/bad practices about the existing code and fix any mistakes you find
 5. Show off your skills! [Examples: environment configuration files, Reporting tool integration, Negative test scenarios, book store application, be creative!]
 6. How else would you look to improve the automation testing on this project?
+
+
+# 📘 Assignment Solution Detail
+
+This project contains automated UI tests written using:
+Cypress 13
+Cucumber BDD (@badeball preprocessor)
+Allure reporting
+Page Object Model (POM)
+The test suite covers the DemoQA Student Registration Form for Automation QA Technical Task.
+
+## Installation and RUN OPTIONS:
+
+
+1- It can be run either from commandline or IDE(VS Code or Visual Sutdio) accordingly. 
+
+ 
+ (i) Tests can be run with following commandline command
+   
+   > npm install.  // For first time installation
+
+   > npm cypress run
+
+   > npm run cy:run
+ 
+  or
+   
+   > npm cypress run --env TAGS='@smoke'.  // For any specific test
+   > npm run cy:run:smoke
+  
+ **BROWSERS** :  
+ *Note#:* All Drivers can be invoked by following command. By default it would run in Chrome
+
+    > npm run test:headed:chrome 
+    > npm run test:headed:firefox
+ 
+
+       
+**REPORTING** :   
+
+ - Extent HTML Reports will be generated automatically at following location with above command execution. 
+  Screenshots will get embedded in the reports too for the Failing tests.
+ 
+     > npm run allure:report      // <-- This will generate and open the reports
+     > npm run test:allure        //<-- This will run tests, generate and open the reports
+     > Report Location : <root>/allure-report/index.html
+ 
+  
+**Scenario EXPLAINATION**:
+
+TASK : There are 1 Feature file with 4 total Scenario (2 positive and 2 negative) to cover all the required tasks
+ 
+Explanation: BDD style(Feature files implementation) has been followed for more readability along with POM(Page Object Model) 
+            design pattern. 
+  
+  - Feature Files : Following UI features has been implemented with the following location
+      > cypress/e2e/stepDefinitions/fillForm.feature. 
+
+  
+  - Step Definition : Feature file implementation is located at following location 
+     >  cypress/e2e/stepDefinitions/fillFormSteps.js
+
+
+
+  
+  - POM (Page Object Model) Files : They have been implemented through Page Object Model. FormPage.js has been located at following location
+     
+     > cypress/support/pages/FormPage.js
+   
+
