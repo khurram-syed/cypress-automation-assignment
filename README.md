@@ -39,7 +39,7 @@ The test suite covers the DemoQA Student Registration Form for Automation QA Tec
  
  (i) Tests can be run with following commandline command
    
-   > npm install.  // For first time installation
+   > npm install.         //<-- For the first time installation
 
    > npm cypress run
 
@@ -47,24 +47,27 @@ The test suite covers the DemoQA Student Registration Form for Automation QA Tec
  
   or
    
-   > npm cypress run --env TAGS='@smoke'.  // For any specific test
+   > npm cypress run --env TAGS='@smoke'.    //<-- For any specific test
+
    > npm run cy:run:smoke
   
  **BROWSERS** :  
- *Note#:* All Drivers can be invoked by following command. By default it would run in Chrome
+ *Note#:* Following browsers can be invoked by below commands. By default it would run in Chrome
 
     > npm run test:headed:chrome 
+
     > npm run test:headed:firefox
  
 
        
 **REPORTING** :   
 
- - Extent HTML Reports will be generated automatically at following location with above command execution. 
-  Screenshots will get embedded in the reports too for the Failing tests.
+ - Allure HTML Reports will be generated automatically at following location with above command execution. Screenshots will get embedded in the reports too for the Failing tests.
  
      > npm run allure:report      // <-- This will generate and open the reports
+
      > npm run test:allure        //<-- This will run tests, generate and open the reports
+
      > Report Location : <root>/allure-report/index.html
  
   
