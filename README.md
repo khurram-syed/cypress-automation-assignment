@@ -26,9 +26,9 @@ This project is intended to test the practice form page of the [demoqa](https://
 
 This project contains automated UI tests written using:
 
-Cypress 13
-Cucumber BDD (@badeball preprocessor)
-Allure reporting
+Cypress 13,
+Cucumber BDD (@badeball preprocessor),
+Allure reporting,
 Page Object Model (POM)
 
 The test suite covers the DemoQA Student Registration Form for Automation QA Technical Task.
@@ -41,7 +41,7 @@ The test suite covers the DemoQA Student Registration Form for Automation QA Tec
  
  (i) Tests can be run with following commandline command
    
-   > npm install.         //<-- For the first time installation
+   > npm install.       &nbsp;&nbsp;&nbsp;&nbsp;  //<-- For the first time installation
 
    > npm cypress run
 
@@ -49,7 +49,7 @@ The test suite covers the DemoQA Student Registration Form for Automation QA Tec
  
   or
    
-   > npm cypress run --env TAGS='@smoke'.    //<-- For any specific test
+   > npm cypress run --env TAGS='@smoke'.  &nbsp;&nbsp;&nbsp;&nbsp;  //<-- For any specific test
 
    > npm run cy:run:smoke
   
@@ -64,11 +64,11 @@ The test suite covers the DemoQA Student Registration Form for Automation QA Tec
        
 **REPORTING** :   
 
- - Allure HTML Reports will be generated automatically at following location with above command execution. Screenshots will get embedded in the reports too for the Failing tests.
+ - Allure HTML Reports will be generated automatically at following location with below command execution. Screenshots will get embedded in the reports too for the Failing tests.
  
-     > npm run allure:report      // <-- This will generate and open the reports
+     > npm run allure:report   &nbsp;&nbsp;&nbsp;&nbsp;   // <-- This will generate and open the reports
 
-     > npm run test:allure        //<-- This will run tests, generate and open the reports
+     > npm run test:allure    &nbsp;&nbsp;&nbsp;&nbsp;    //<-- This will run all tests, generate and open the reports in browser, i.e. all in one
 
      > Report Location : <root>/allure-report/index.html
  
@@ -77,16 +77,14 @@ The test suite covers the DemoQA Student Registration Form for Automation QA Tec
 
 TASK : There are 1 Feature file with 4 total Scenario (2 positive and 2 negative) to cover all the required tasks
  
-Explanation: BDD style(Feature files implementation) has been followed for more readability along with POM(Page Object Model) 
-            design pattern. 
+Explanation: BDD style(Feature files implementation) has been followed for more readability along with POM(Page Object Model) design pattern. 
   
-  - Feature Files : Following UI features has been implemented with the following location
+  - Feature Files : Following UI feature has been implemented with the following location
       > cypress/e2e/stepDefinitions/fillForm.feature. 
 
   
   - Step Definition : Feature file implementation is located at following location 
      >  cypress/e2e/stepDefinitions/fillFormSteps.js
-
 
 
   
