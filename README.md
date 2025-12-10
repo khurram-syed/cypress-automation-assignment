@@ -25,10 +25,12 @@ This project is intended to test the practice form page of the [demoqa](https://
 # 📘 Assignment Solution Detail
 
 This project contains automated UI tests written using:
+
 Cypress 13
 Cucumber BDD (@badeball preprocessor)
 Allure reporting
 Page Object Model (POM)
+
 The test suite covers the DemoQA Student Registration Form for Automation QA Technical Task.
 
 ## Installation and RUN OPTIONS:
